@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Presupuesto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Simulador de Presupuesto</h2>
+
+    <!-- Registro -->
+    <section id="register-section">
+        <h3>Registrarse</h3>
+        <input type="text" id="register-username" placeholder="Nombre de usuario" aria-label="Nombre de usuario">
+        <input type="password" id="register-password" placeholder="Contraseña" aria-label="Contraseña">
+        <button id="register-btn">Registrarse</button>
+    </section>
+
+    <!-- Inicio de Sesión -->
+    <section id="login-section">
+        <h3>Iniciar Sesión</h3>
+        <input type="text" id="login-username" placeholder="Nombre de usuario" aria-label="Nombre de usuario">
+        <input type="password" id="login-password" placeholder="Contraseña" aria-label="Contraseña">
+        <button id="login-btn">Iniciar Sesión</button>
+    </section>
+
+    <!-- Aplicación de Presupuesto -->
+    <section id="budget-app" style="display: none;">
+        <h2>Bienvenido, <span id="username-display"></span></h2>
+        <input type="number" id="amount" placeholder="Cantidad" aria-label="Cantidad">
+        <select id="type" aria-label="Tipo">
+            <option value="income">Ingreso</option>
+            <option value="expense">Gasto</option>
+        </select>
+        <button id="add-btn">Agregar</button>
+
+        <h3>Resumen del Presupuesto</h3>
+        <p>Ingresos: $<span id="total-income">0</span></p>
+        <p>Gastos: $<span id="total-expense">0</span></p>
+        <p>Balance: $<span id="balance">0</span></p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
